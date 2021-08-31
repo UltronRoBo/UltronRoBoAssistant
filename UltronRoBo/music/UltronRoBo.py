@@ -22,7 +22,10 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 
+from UltronRoBo.music.pyro import *
+from UltronRoBo.music.user import *
 from UltronRoBo.music.utils import *
+from UltronRoBo.music.music import *
 from UltronRoBo.music.config import *
 
 from UltronRoBo.music import *
