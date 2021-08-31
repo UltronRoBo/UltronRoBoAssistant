@@ -48,7 +48,7 @@ else:
 class Config:
     ADMIN = os.environ.get("ADMINS", '')
     ADMINS = [int(admin) if re.search('^\d+$', admin) else admin for admin in (ADMIN).split()]
-    APP_ID = int(os.environ.get("APP_ID", '')) # api id for music bot helper
+    APP_ID_HELPER = int(os.environ.get("APP_ID_HELPER", '')) # api id for music bot helper
     CHAT = int(os.environ.get("CHAT", "")) # chat group id where to play music, must start with -100
     LOG_GROUP=os.environ.get("LOG_GROUP", "") # same as chat group id
     if LOG_GROUP:
@@ -68,7 +68,7 @@ class Config:
         EDIT_TITLE=None
     DURATION_LIMIT=int(os.environ.get("MAXIMUM_DURATION", 15))
     DELAY = int(os.environ.get("DELAY", 5))
-    APP_HASH = os.environ.get("APP_HASH", "") # api hash for music bot helper
+    APP_HASH_HELPER = os.environ.get("APP_HASH_HELPER", "") # api hash for music bot helper
     # BOT_TOKEN = os.environ.get("BOT_TOKEN", "") # same bot token 
     BOT_TOKEN = Var.TOKEN
     MUSIC_SESSION = os.environ.get("MUSIC_SESSION", "") # string session for music bot helper
