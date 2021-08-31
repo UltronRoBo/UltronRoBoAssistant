@@ -28,14 +28,14 @@ REPLY_MESSAGE=Config.REPLY_MESSAGE
 if REPLY_MESSAGE is not None:
     USER = Client(
         Config.MUSIC_SESSION,
-        Config.APP_ID,
-        Config.APP_HASH,
+        Config.APP_ID_HELPER,
+        Config.APP_HASH_HELPER,
         plugins=dict(root="userplugins")
         )
 else:
     USER = Client(
         Config.MUSIC_SESSION,
-        Config.APP_ID,
-        Config.APP_HASH
+        Config.APP_ID_HELPER,
+        Config.APP_HASH_HELPER
         )
 USER.start()
