@@ -201,7 +201,7 @@ else:
     SPAMWATCH_API = UltronRoBo.SPAMWATCH_API
     INFOPIC = UltronRoBo.INFOPIC
     REDIS_URL = UltronRoBo.REDIS_URL
-    STRING_SESSION = UltronRoBo.STRING_SESSION
+    GROUP_BOT_SESSION = UltronRoBo.GROUP_BOT_SESSION
     
     try:
         BL_CHATS = set(int(x) for x in UltronRoBo.BL_CHATS or [])
@@ -226,7 +226,7 @@ UltronRoBot = TelegramClient(StringSession(GROUP_BOT_SESSION), API_ID, API_HASH)
 try:
     UltronRoBot.start()
 except BaseException:
-    print("Userbot Error ! Have you added a STRING_SESSION in deploying??")
+    print("UserBot Error ! Did you add a GROUP_BOT_SESSION at the time of deploying??")
     sys.exit(1)
 
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
