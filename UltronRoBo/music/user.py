@@ -27,15 +27,15 @@ from pyrogram import Client
 REPLY_MESSAGE=Config.REPLY_MESSAGE
 if REPLY_MESSAGE is not None:
     USER = Client(
-        Config.SESSION,
-        Config.API_ID,
-        Config.API_HASH,
+        Config.MUSIC_SESSION,
+        Config.APP_ID,
+        Config.APP_HASH,
         plugins=dict(root="userplugins")
         )
 else:
     USER = Client(
-        Config.SESSION,
-        Config.API_ID,
-        Config.API_HASH
+        Config.MUSIC_SESSION,
+        Config.APP_ID,
+        Config.APP_HASH
         )
 USER.start()
