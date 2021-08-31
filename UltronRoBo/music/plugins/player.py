@@ -497,7 +497,7 @@ async def join_group_call(client, m: Message):
     await um.delete(m)
 
 
-@Client.on_message(filters.command(["leave", f"leave@{U}"]) & admin_filter)
+@Client.on_message(filters.command(["leavevc", f"leavevc@{U}"]) & admin_filter)
 async def leave_voice_chat(_, m: Message):
     group_call = um.group_call
     if not group_call.is_connected:
@@ -619,7 +619,7 @@ async def clean_raw_pcm(client, m: Message):
     await um.delete(m)
 
 
-@Client.on_message(filters.command(["mute", f"mute@{U}"]) & admin_filter & (filters.chat(CHAT) | filters.private))
+@Client.on_message(filters.command(["mutevc", f"mutevc@{U}"]) & admin_filter & (filters.chat(CHAT) | filters.private))
 async def mute(_, m: Message):
     group_call = um.group_call
     if not group_call.is_connected:
@@ -632,7 +632,7 @@ async def mute(_, m: Message):
     await um.delete(k)
     await um.delete(m)
 
-@Client.on_message(filters.command(["unmute", f"unmute@{U}"]) & admin_filter & (filters.chat(CHAT) | filters.private))
+@Client.on_message(filters.command(["unmutevc", f"unmutevc@{U}"]) & admin_filter & (filters.chat(CHAT) | filters.private))
 async def unmute(_, m: Message):
     group_call = um.group_call
     if not group_call.is_connected:
@@ -684,7 +684,7 @@ async def show_playlist(_, m: Message):
         msg['playlist'] = await m.reply_text(pl)
     await um.delete(m)
 
-admincmds=["join", "unmute", "mute", "leave", "clean", "vc", "pause", "resume", "stop", "skip", "radio", "stopradio", "replay", "restart", "volume", f"volume@{U}", f"join@{U}", f"unmute@{U}", f"mute@{U}", f"leave@{U}", f"clean@{U}", f"vc@{U}", f"pause@{U}", f"resume@{U}", f"stop@{U}", f"skip@{U}", f"radio@{U}", f"stopradio@{U}", f"replay@{U}", f"restart@{U}"]
+admincmds=["join", "unmutevc", "mutevc", "leavevc", "clean", "vc", "pause", "resume", "stop", "skip", "radio", "stopradio", "replay", "restart", "volume", f"volume@{U}", f"join@{U}", f"unmutevc@{U}", f"mutevc@{U}", f"leavevc@{U}", f"clean@{U}", f"vc@{U}", f"pause@{U}", f"resume@{U}", f"stop@{U}", f"skip@{U}", f"radio@{U}", f"stopradio@{U}", f"replay@{U}", f"restart@{U}"]
 
 @Client.on_message(filters.command(admincmds) & ~admin_filter & (filters.chat(CHAT) | filters.private))
 async def notforu(_, m: Message):
