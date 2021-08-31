@@ -69,7 +69,7 @@ RUN pip3 install -U pip
 RUN pip3 install --upgrade pip setuptools
 
 # Copy Python Requirements to /root/UltronRoBo
-RUN git clone -b UltronRoBo https://github.com/UltronRoBo/UltronRoBoAssistant /root/UltronRoBo
+RUN git clone -b UltronRoBot https://github.com/UltronRoBo/UltronRoBoAssistant /root/UltronRoBo
 WORKDIR /root/UltronRoBo
 
 # Copy config file to /root/UltronRoBo/UltronRoBo
