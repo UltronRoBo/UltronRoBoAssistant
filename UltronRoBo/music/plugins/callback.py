@@ -24,8 +24,8 @@ SOFTWARE.
 
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram import Client, emoji
-from UltronRoBo.utils import um
-from UltronRoBo.config import Config
+from UltronRoBo.music.utils import um
+from UltronRoBo.music.config import Config
 playlist=Config.playlist
 
 HELP = """
