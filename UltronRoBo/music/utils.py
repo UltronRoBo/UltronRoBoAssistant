@@ -42,8 +42,8 @@ from random import randint
 
 ultron = Client(
     "UltronVC",
-    Config.API_ID,
-    Config.API_HASH,
+    Config.APP_ID,
+    Config.APP_HASH,
     bot_token=Config.BOT_TOKEN
 )
 ultron.start()
