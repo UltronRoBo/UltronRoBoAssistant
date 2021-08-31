@@ -24,8 +24,8 @@ SOFTWARE.
 
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram import Client, filters
-from UltronRoBo.utils import USERNAME, um
-from UltronRoBo.config import Config
+from UltronRoBo.music.utils import USERNAME, um
+from UltronRoBo.music.config import Config
 U=USERNAME
 CHAT=Config.CHAT
 msg=Config.msg
