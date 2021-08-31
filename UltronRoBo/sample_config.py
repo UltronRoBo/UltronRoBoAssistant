@@ -28,7 +28,7 @@ import os
 
 
 def get_user_list(config, key):
-    with open("{}/TeslaRobot/{}".format(os.getcwd(), config), "r") as json_file:
+    with open("{}/UltronRoBo/{}".format(os.getcwd(), config), "r") as json_file:
         return json.load(json_file)[key]
 
 
@@ -95,9 +95,9 @@ class Var(object):
     BL_CHATS = []  # List of groups that you want blacklisted.
     SPAMMERS = None
 
-class Production(Config):
+class Production(Var):
     LOGGER = True
 
 
-class Development(Config):
+class Development(Var):
     LOGGER = True
