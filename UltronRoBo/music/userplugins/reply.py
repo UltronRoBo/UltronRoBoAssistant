@@ -23,8 +23,8 @@ SOFTWARE.
 """
 
 from pyrogram import Client, filters
-from UltronRoBo.utils import USERNAME
-from UltronRoBo.config import Config
+from UltronRoBo.music.utils import USERNAME
+from UltronRoBo.music.config import Config
 ADMINS=Config.ADMINS
 CACHE={}
 from pyrogram.errors import BotInlineDisabled
