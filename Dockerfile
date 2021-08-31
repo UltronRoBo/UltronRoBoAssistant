@@ -72,7 +72,7 @@ RUN pip3 install --upgrade pip setuptools
 RUN git clone -b UltronRoBo https://github.com/UltronRoBo/UltronRoBoAssistant /root/UltronRoBo
 WORKDIR /root/UltronRoBo
 
-# Copy config file to /root/UltronRoBo/UltronRoBoAssistant
+# Copy config file to /root/UltronRoBo/UltronRoBo
 COPY ./UltronRoBo/sample_config.py ./UltronRoBo/config.py* /root/UltronRoBo/UltronRoBo/
 
 ENV PATH="/home/bot/bin:$PATH"
