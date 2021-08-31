@@ -35,16 +35,19 @@ HELP = """
 Start a VoiceChat.
 Use /play <song name> or use /play as a reply to an audio file or youtube link.
 You can also use /dplay <song name> to play a song from Deezer.</b>
+
 **Common Commands**:
+**/startvc** Starts the Music Bot & its Helper.
 **/play**  Reply to an audio file or YouTube link to play it or use /play <song name>.
 **/dplay** Play music from Deezer, Use /dplay <song name>
 **/player**  Show current playing song.
 **/help** Show help for commands
 **/playlist** Shows the playlist.
+
 **Admin Commands**:
 **/skip** [n] ...  Skip current or n where n >= 2
 **/join**  Join voice chat.
-**/leave**  Leave current voice chat
+**/leavevc**  Leave current voice chat
 **/vc**  Check which VC is joined.
 **/stop**  Stop playing.
 **/radio** Start Radio.
@@ -54,14 +57,12 @@ You can also use /dplay <song name> to play a song from Deezer.</b>
 **/pause** Pause playing.
 **/resume** Resume playing.
 **/volume** Change volume(0-200).
-**/mute**  Mute in VC.
-**/unmute**  Unmute in VC.
+**/mutevc**  Mute in VC.
+**/unmutevc**  Unmute in VC.
 **/restart** Updates & restarts the Bot.
 """
 
-
-
-@Client.on_message(filters.command(['start', f'start@{U}']))
+@Client.on_message(filters.command(['startvc', f'startvc@{U}']))
 async def start(client, message):
     buttons = [
         [
@@ -84,7 +85,7 @@ async def start(client, message):
 
 
 
-@Client.on_message(filters.command(["help", f"help@{U}"]))
+@Client.on_message(filters.command(["music", f"music@{U}"]))
 async def show_help(client, message):
     buttons = [
         [
