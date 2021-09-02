@@ -24,11 +24,11 @@ SOFTWARE.
 
 import os
 from youtube_dl import YoutubeDL
-from UltronRoBo.music.config import Config
+from UltronMusic.config import Config
 from pyrogram import Client, filters, emoji
 from pyrogram.methods.messages.download_media import DEFAULT_DOWNLOAD_DIR
 from pyrogram.types import Message
-from UltronRoBo.music.utils import um, RADIO, USERNAME, FFMPEG_PROCESSES
+from UltronMusic.utils import um, RADIO, USERNAME, FFMPEG_PROCESSES
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from Python_ARQ import ARQ
 from youtube_search import YoutubeSearch
