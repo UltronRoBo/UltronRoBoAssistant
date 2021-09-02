@@ -24,7 +24,7 @@ SOFTWARE.
 
 import os
 import re
-from UltronRoBo.config import Var
+from UltronRoBo.sample_config import Var
 from youtube_dl import YoutubeDL
 ydl_opts = {
     "geo-bypass": True,
