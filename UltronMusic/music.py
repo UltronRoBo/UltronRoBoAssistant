@@ -25,8 +25,8 @@ SOFTWARE.
 import asyncio
 from pyrogram import Client, idle, filters
 import os
-from UltronRoBo.music.config import Config
-from UltronRoBo.music.utils import um, USERNAME, FFMPEG_PROCESSES
+from UltronMusic.config import Config
+from UltronMusic.utils import um, USERNAME, FFMPEG_PROCESSES
 from pyrogram.raw import functions, types
 import os
 import sys
