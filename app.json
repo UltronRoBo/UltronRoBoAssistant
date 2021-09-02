@@ -9,7 +9,8 @@
         "UltronRoBo",
         "pyrogram",
         "music",
-        "ultron"
+        "ultron",
+        "ultronvc"
     ],
     "logo": "https://telegra.ph/file/cd60cddea8ed5beb7af4a.png",  
     "repository": "https://github.com/UltronRoBo/UltronRoBoAssistant",
