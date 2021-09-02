@@ -22,7 +22,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 
-from UltronRoBo.music.config import Config
+from UltronMusic.config import Config
 from pyrogram import Client
 REPLY_MESSAGE=Config.REPLY_MESSAGE
 if REPLY_MESSAGE is not None:
