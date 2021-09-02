@@ -24,10 +24,10 @@ SOFTWARE.
 
 from pyrogram.handlers import InlineQueryHandler
 from youtubesearchpython import VideosSearch
-from UltronRoBo.music.utils import USERNAME
+from UltronMusic.utils import USERNAME
 from pyrogram.types import InlineQueryResultArticle, InputTextMessageContent, InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram import Client, errors
-from UltronRoBo.music.config import Config
+from UltronMusic.config import Config
 REPLY_MESSAGE=Config.REPLY_MESSAGE
 buttons = [
     [
