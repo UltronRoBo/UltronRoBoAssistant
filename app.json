@@ -1,6 +1,6 @@
 {
-    "name": "TeslaRobo",
-    "description": "An Advanced and Modified Group Manager + VC Bot, made using Latest Python & other Latest Packages and Modules. Managed By :- @Warning_MadBoy_is_Back. DEVs :- @ItS_PRaNAv_Xd. ",
+    "name": "UʟᴛʀᴏɴRᴏBᴏ",
+    "description": "An Advanced and Modified Group Manager + VC Bot, made using Latest Python & other Latest Packages and Modules. Managed By :- @Warning_MadBoy_is_Back. 𝑷𝒐𝒘𝒆𝒓𝒆𝒅 𝒃𝒚 𝑼𝒍𝒕𝒓𝒐𝒏𝑹𝒐𝑩𝒐",
     "keywords": [
         "telegram",
         "vcbot",
@@ -12,7 +12,7 @@
         "ultron"
     ],
     "logo": "https://telegra.ph/file/cd60cddea8ed5beb7af4a.png",  
-    "repository": "https://github.com/MadBoy-X/TeslaRobo",
+    "repository": "https://github.com/UltronRoBo/UltronRoBoAssistant",
     "stack": "container",
     "addons": [
         {
