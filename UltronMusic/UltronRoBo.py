@@ -22,4 +22,12 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 
+from UltronMusic.pyro import *
+from UltronMusic.user import *
+from UltronMusic.utils import *
+from UltronMusic.music import *
+from UltronMusic.config import *
+
 from UltronMusic import *
+from UltronMusic.plugins import *
+from UltronMusic.userplugins import *
