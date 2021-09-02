@@ -46,7 +46,10 @@ __help__ = """
 - /truth : Asks u a question.
 - /dare : Gives u a dare.
 """
-__command_list__ = ["truth", "dare"]
+__command_list__ = [
+    "truth", 
+    "dare",
+]
 
 TRUTH_HANDLER = DisableAbleCommandHandler("truth", truth)
 DARE_HANDLER = DisableAbleCommandHandler("dare", dare)
