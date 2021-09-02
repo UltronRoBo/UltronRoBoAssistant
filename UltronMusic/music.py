@@ -36,10 +36,10 @@ import subprocess
 CHAT=Config.CHAT
 ultron = Client(
     "UltronMusic",
-    Config.APP_ID,
-    Config.APP_HASH,
+    Config.APP_ID_HELPER,
+    Config.APP_HASH_HELPER,
     bot_token=Config.BOT_TOKEN,
-    plugins=dict(root="plugins")
+    plugins=dict(root="UltronMusic/plugins")
 )
 if not os.path.isdir("./downloads"):
     os.makedirs("./downloads")
