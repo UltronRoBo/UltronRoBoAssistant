@@ -24,9 +24,9 @@ SOFTWARE.
 
 from pyrogram import Client, filters
 from pyrogram.types import Message
-from UltronRoBo.music.utils import um, RADIO, USERNAME
-from UltronRoBo.music.config import Config
-from UltronRoBo.music.config import STREAM
+from UltronMusic.utils import um, RADIO, USERNAME
+from UltronMusic.config import Config
+from UltronMusic.config import STREAM
 CHAT=Config.CHAT
 ADMINS=Config.ADMINS
 
