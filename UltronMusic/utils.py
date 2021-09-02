@@ -23,7 +23,7 @@ SOFTWARE.
 """
 
 import os
-from UltronRoBo.music.config import Config
+from UltronMusic.config import Config
 import ffmpeg
 from pyrogram import emoji
 from pyrogram.methods.messages.download_media import DEFAULT_DOWNLOAD_DIR
@@ -50,7 +50,7 @@ ultron.start()
 e=ultron.get_me()
 USERNAME=e.username
 
-from UltronRoBo.music.user import USER
+from UltronMusic.user import USER
 
 STREAM_URL=Config.STREAM_URL
 CHAT=Config.CHAT
