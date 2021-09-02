@@ -30,7 +30,7 @@ if REPLY_MESSAGE is not None:
         Config.MUSIC_SESSION,
         Config.APP_ID_HELPER,
         Config.APP_HASH_HELPER,
-        plugins=dict(root="userplugins")
+        plugins=dict(root="UltronMusic/userplugins")
         )
 else:
     USER = Client(
