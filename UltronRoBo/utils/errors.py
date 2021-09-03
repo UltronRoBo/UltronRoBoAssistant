@@ -25,7 +25,7 @@ SOFTWARE.
 import sys
 import traceback
 from functools import wraps
-from TeslaRobot import pbot as app
+from UltronRoBo import UltronRobo as app
 from pyrogram.errors.exceptions.forbidden_403 import ChatWriteForbidden
 
 LOG_GROUP_ID = int(-1001440315612)
