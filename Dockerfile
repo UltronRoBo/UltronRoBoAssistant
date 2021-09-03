@@ -7,7 +7,6 @@ RUN sed -i.bak 's/us-west-2\.ec2\.//' /etc/apt/sources.list
 
 # Installing Required Packages
 RUN apt update && apt upgrade -y && \
-    apt install git curl python3-pip ffmpeg -y \
     apt install --no-install-recommends -y \
     debian-keyring \
     debian-archive-keyring \
@@ -62,9 +61,6 @@ RUN apt update && apt upgrade -y && \
     libopus-dev \
     && rm -rf /var/lib/apt/lists /var/cache/apt/archives /tmp
 
-# Installing Pip
-RUN pip3 install -U pip
-
 # Pypi package Repo upgrade
 RUN pip3 install --upgrade pip setuptools
 
@@ -82,3 +78,4 @@ RUN pip3 install -U -r requirements.txt
 
 # Starting Worker
 CMD ["python3.9","-m","UltronRoBo"]
+CMD ["python3.9","-m","UltronMusic"]
