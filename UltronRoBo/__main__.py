@@ -31,7 +31,6 @@ from typing import Optional
 from UltronRoBo import (
     ALLOW_EXCL,
     CERT_PATH,
-    DONATION_LINK,
     LOGGER,
     OWNER_ID,
     PORT,
