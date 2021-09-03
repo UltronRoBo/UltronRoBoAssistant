@@ -216,7 +216,7 @@ if is_module_loaded(FILENAME):
             return f"This group has all it's logs sent to: {escape_markdown(log_channel_info.title)} (`{log_channel}`)"
         return "No log channel is set for this group!"
 
-__help__ = """
+    __help__ = """
 *Admins only:*
  ❍ /logchannel*:* get log channel info
  ❍ /setlog*:* set the log channel.
@@ -226,15 +226,17 @@ Setting the log channel is done by:
 ❍ sending /setlog in the channel
 ❍ forwarding the /setlog to the group
 """
-__mod_name__ = "Log Channel"
 
-LOG_HANDLER = CommandHandler("logchannel", logging)
-SET_LOG_HANDLER = CommandHandler("setlog", setlog)
-UNSET_LOG_HANDLER = CommandHandler("unsetlog", unsetlog)
+    __mod_name__ = "Channel"
 
-dispatcher.add_handler(LOG_HANDLER)
-dispatcher.add_handler(SET_LOG_HANDLER)
-dispatcher.add_handler(UNSET_LOG_HANDLER)
+    LOG_HANDLER = CommandHandler("logchannel", logging)
+    SET_LOG_HANDLER = CommandHandler("setlog", setlog)
+    UNSET_LOG_HANDLER = CommandHandler("unsetlog", unsetlog)
+
+    dispatcher.add_handler(LOG_HANDLER)
+    dispatcher.add_handler(SET_LOG_HANDLER)
+    dispatcher.add_handler(UNSET_LOG_HANDLER)
+
 else:
     # run anyway if module not loaded
     def loggable(func):
